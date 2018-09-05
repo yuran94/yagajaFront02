@@ -1,0 +1,225 @@
+body {
+	-ms-user-select: none; -moz-user-select: none; -webkit-user-select: none; user-select: none; -khtml-user-select: none;
+}
+.skip_navigation {
+	left: 0px; top: 0px; width: 100%; text-align: center; display: block; position: relative; z-index: 1000;
+}
+.skip_navigation a {
+	margin: 0px 0px -1px; left: 0px; top: -1px; width: 100%; height: 1px; color: rgb(255, 255, 255); line-height: 30px; overflow: hidden; font-size: 13px; font-weight: bold; display: block; position: absolute;
+}
+.skip_navigation a:focus {
+	padding: 3px; height: auto; background-color: black;
+}
+.skip_navigation a:active {
+	padding: 3px; height: auto; background-color: black;
+}
+.sc-out {
+	left: -9999px; width: 1px; height: 1px; line-height: 0; text-indent: -9999px; overflow: hidden; font-size: 0px; position: absolute;
+}
+.show {
+	display: block;
+}
+.hide {
+	display: none;
+}
+.f-left {
+	float: left;
+}
+.f-right {
+	float: right;
+}
+.clearfix::after {
+	clear: both; display: table; content: "";
+}
+h1 {
+	font-weight: normal;
+}
+h2 {
+	font-weight: normal;
+}
+h3 {
+	font-weight: normal;
+}
+h4 {
+	font-weight: normal;
+}
+h5 {
+	font-weight: normal;
+}
+.title-section {
+	color: rgb(51, 51, 51); font-size: 18px; margin-bottom: 15px;
+}
+.title-section em {
+	font-weight: bold;
+}
+.txt-more {
+	color: rgb(136, 136, 136); font-size: 14px;
+}
+.txt-tipcheck {
+	color: rgb(170, 170, 170); font-size: 14px;
+}
+.txt-warning {
+	color: rgb(255, 45, 96); font-size: 12px;
+}
+.txt-underline {
+	text-decoration: line-through;
+}
+.link-txt {
+	color: rgb(51, 51, 51); font-size: 14px; margin-right: 2px; border-bottom-color: rgb(51, 51, 51); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.link-txt:hover {
+	border-color: rgb(255, 45, 96);
+}
+.color-pink {
+	color: rgb(255, 45, 96);
+}
+.color-dark {
+	color: rgb(51, 51, 51);
+}
+.color-darkred {
+	color: rgb(255, 37, 89);
+}
+.color-orange {
+	color: rgb(243, 123, 72);
+}
+.color-mint {
+	color: rgb(24, 208, 197);
+}
+button:disabled {
+	cursor: default;
+}
+.color-gradation {
+	background: rgb(255, 73, 61); color: white; -webkit-background: linear-gradient(top, #ff493d 0%, #ff1069 100%);
+}
+.tag-rap .tag-primary {
+	margin-right: 5px; margin-bottom: 5px;
+}
+.tag-rap .tag-default {
+	margin-right: 5px; margin-bottom: 5px;
+}
+.tag-primary {
+	padding: 4px 8px; color: white; font-size: 13px; display: inline-block; background-color: rgb(255, 45, 96);
+}
+.tag-default {
+	padding: 4px 8px; color: white; font-size: 13px; display: inline-block; background-color: rgb(102, 102, 102);
+}
+.dimmed {
+	left: 0px; top: 63px; width: 100%; height: 100%; position: fixed; z-index: 0; background-color: rgba(0, 0, 0, 0.8);
+}
+.dimmed.on {
+	display: block;
+}
+.dimmed-white {
+	left: 0px; top: 250px; width: 60%; height: 100%; position: fixed; background-color: rgba(255, 255, 255, 0.8);
+}
+.blur {
+	
+}
+.tooltip-wrap {
+	vertical-align: middle; display: inline-block; position: relative; z-index: 1; -ms-zoom: 1;
+}
+.tooltip-wrap .icon-tooltip {
+	position: relative;
+}
+.tooltip-wrap .tooltip-body {
+	display: none; position: absolute; backface-visibility: hidden; animation-name: fadeIn; animation-duration: 0.4s; animation-timing-function: ease; animation-delay: 0s; animation-iteration-count: 1; animation-fill-mode: both; -webkit-backface-visibility: hidden; -webkit-animation-name: fadeIn; -moz-animation-name: fadeIn; -o-animation-name: fadeIn; -webkit-animation-iteration-count: 1; -moz-animation-iteration-count: 1; -o-animation-iteration-count: 1; -webkit-animation-duration: 0.4s; -moz-animation-duration: 0.4s; -o-animation-duration: 0.4s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; -webkit-animation-timing-function: ease; -moz-animation-timing-function: ease; -o-animation-timing-function: ease; -webkit-animation-fill-mode: both; -moz-animation-fill-mode: both; -o-animation-fill-mode: both; -moz-backface-visibility: hidden; -o-backface-visibility: hidden;
+}
+.tooltip-wrap .tooltip-content {
+	padding-top: 10px; margin-left: 12px; vertical-align: middle; display: inline-block; position: relative; -ms-zoom: 1;
+}
+.tooltip-wrap .tooltip-content i {
+	left: 50%; top: 0px; margin-left: -13px; position: absolute;
+}
+.tooltip-wrap .tooltip-content .text-box {
+	padding: 10px 15px; width: 150px; color: rgb(204, 204, 204); font-size: 13px; vertical-align: middle; display: inline-block; -ms-zoom: 1; background-color: rgba(51, 51, 51, 0.95);
+}
+.tooltip-wrap .tooltip-content .text-box p {
+	margin-top: 5px;
+}
+.tooltip-wrap .tooltip-content .text-box p:first-child {
+	margin-top: 0px;
+}
+.tooltip-wrap:hover .tooltip-body {
+	display: block;
+}
+.inp {
+	display: inline-block;
+}
+.inp label {
+	color: rgb(51, 51, 51); font-size: 15px;
+}
+.inp-checkbox input[type=checkbox] {
+	border: 1px solid rgb(204, 204, 204); border-image: none; width: 23px; height: 23px; margin-right: 10px; background-color: white;
+}
+.inp-checkbox input[type=checkbox]:checked[type=checkbox] {
+	background: url("https://yaimg.yanolja.com/joy/pw/common/inp-checkbox-on.png") no-repeat -1px -1px rgb(255, 45, 96); border-color: rgb(255, 45, 96);
+}
+.inp-checkbox label {
+	font-size: 14px;
+}
+.calendar-toparea-pc {
+	left: 0px; width: 100%; position: fixed; z-index: 1;
+}
+.calendar-toparea-pc .datepicker-container {
+	width: 100%; height: 55px; position: relative; box-sizing: border-box; background-color: rgb(242, 242, 242); -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+}
+.calendar-toparea-pc .datepicker-content {
+	padding: 10px 30px 6px;
+}
+.calendar-toparea-pc .datepicker-content .inp-datepicker-reservecheck {
+	margin-left: 75px;
+}
+.calendar-toparea-pc .path-content {
+	top: 50%; right: 30px; color: rgb(51, 51, 51); font-size: 14px; margin-top: -12px; position: absolute;
+}
+.calendar-toparea-pc .DateInput__display-text {
+	font-weight: 600; cursor: pointer;
+}
+.calendar-toparea-pc .DateInput__display-text.DateInput__display-text--focused {
+	color: rgb(255, 45, 96);
+}
+.category-area-pc {
+	left: 0px; width: 100%; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; position: fixed; z-index: 1; background-color: white;
+}
+.category-area-pc .category-list {
+	height: 49px; text-align: center;
+}
+.category-area-pc .category-list::after {
+	clear: both; display: table; content: "";
+}
+.category-area-pc .category-list .category-item {
+	padding: 10px 0px; display: inline-block; min-width: 90px;
+}
+.category-area-pc .category-list :first-child.category-item {
+	margin-left: 0px;
+}
+.category-area-pc .category-list .category-item a {
+	padding: 5px 0px; color: rgb(102, 102, 102); font-size: 15px; display: inline-block; position: relative;
+}
+.category-area-pc .category-list .category-item a.active {
+	color: rgb(51, 51, 51);
+}
+.category-area-pc .category-list .category-item a:hover {
+	color: rgb(51, 51, 51);
+}
+.category-area-pc .category-list .category-item a.active::after {
+	display: block;
+}
+.category-area-pc .category-list .category-item a:hover::after {
+	display: block;
+}
+.category-area-pc .category-list .category-item a::after {
+	left: 0px; width: 100%; height: 2px; bottom: 0px; display: none; position: absolute; content: ""; backface-visibility: hidden; animation-name: pulse; animation-duration: 1s; animation-timing-function: ease; animation-delay: 0s; animation-iteration-count: 0.4; animation-fill-mode: both; background-color: rgb(51, 51, 51); -webkit-backface-visibility: hidden; -webkit-animation-name: pulse; -moz-animation-name: pulse; -o-animation-name: pulse; -webkit-animation-iteration-count: 0.4; -moz-animation-iteration-count: 0.4; -o-animation-iteration-count: 0.4; -webkit-animation-duration: 1s; -moz-animation-duration: 1s; -o-animation-duration: 1s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; -webkit-animation-timing-function: ease; -moz-animation-timing-function: ease; -o-animation-timing-function: ease; -webkit-animation-fill-mode: both; -moz-animation-fill-mode: both; -o-animation-fill-mode: both; -moz-backface-visibility: hidden; -o-backface-visibility: hidden;
+}
+.warningmessage .view-box {
+	background: rgba(0, 0, 0, 0.6) !important; margin: 0px auto; padding: 25px 0px; border-radius: 6px; color: white; font-size: 21px; max-width: 750px; -webkit-border-radius: 6px;
+}
+.warningmessage .btn-layer-close {
+	display: none;
+}
+.line-dashed {
+	background: url("https://yaimg.yanolja.com/joy/pw/common/bg-line-dashed.png") repeat-x 0px rgb(250, 250, 250); border-width: 1px 0px; border-style: solid none; border-color: rgb(229, 229, 229) currentColor; margin: -1px -30px; border-image: none; height: 40px; display: block;
+}
+.container_blur {
+	-webkit-filter: blur(10px); -moz-filter: blur(10px); -o-filter: blur(10px);
+}
