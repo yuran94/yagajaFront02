@@ -8,6 +8,6 @@ public interface YagajaMemberImpl {
 	//회원 가입
 	public int join(String id, String pass, String nickname, String phone, String email);
 	
-	//회원 정보수정
-	public int modify(String member_no, String phone, String nickname, String email, String id);
+	//회원 정보보기
+	public int view(String member_no, String phone, String nickname, String email, String id);
 }

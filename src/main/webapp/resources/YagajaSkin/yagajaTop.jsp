@@ -6,8 +6,7 @@
 <link rel="stylesheet" href="../resources/bootstrap3.3.7/css/common.css" data-reactid="20" />
 		
 <head data-reactid="2">
-<<<<<<< HEAD
-=======
+
 <meta data-react-helmet="true" name="description"
 	content="서울특별시 관악구 신림동 1569-5  | 신림 HOTEL 어반 | 리뷰 많은 추천 숙소 확인하고 최저가로 예약하세요! 커플, 가족, 친구와 함께 떠나는 여행은 야놀자와 함께!"
 	data-reactid="4" />
@@ -24,10 +23,6 @@
 	data-reactid="8" />
 <meta data-react-helmet="true" property="og:type" content="website"
 	data-reactid="9" />
-
-
-
->>>>>>> refs/remotes/origin/master
 
 <link data-react-helmet="true" rel="canonical"
 	href="https://www.yanolja.com/places/3000411" data-reactid="12" />
@@ -56,8 +51,8 @@
 			<a class="logo-rap" href="../main/main.do" data-reactid="9"> 
 			<!-- 좌상단 -->
 				<h1 class="site-logo icon-comm icon-logo-header" data-reactid="10">
-					<span class="sc-out" data-reactid="11">Yagaja</span> <i
-						class="icon-beta" data-reactid="12"></i>
+					<span class="sc-out" data-reactid="11">Yagaja</span> 
+					<i class="icon-beta" data-reactid="12"></i>
 				</h1>
 			</a>
 
@@ -262,30 +257,29 @@
 									<div data-popover-children="true" data-reactid="74">
 										<c:choose>
 										<c:when test="${not empty sessionScope.siteUserInfo }">
-										<button  type="button" class="member-info" data-reactid="75">
+										
+										<button type="button" class="member-info" data-reactid="75" >
 											<img src="../resources/images/default_picture.png"
-												alt="nickname" class="avatar" data-reactid="76" /> <span
-												data-reactid="77">${sessionScope.siteUserInfo.nickname }</span>
+												alt="nickname" class="avatar" data-reactid="76" /> 
+												<span data-reactid="77">${sessionScope.siteUserInfo.nickname }</span>
 										</button>
-									</div>
-									<div style="display:block;"
-										class="popover-content popover-member-menu animate-bounce-down"
+									<div style="display:block;" class="popover-content popover-member-menu animate-bounce-down"
 										data-popover-content="true" data-reactid="78">
 										<div class="member-menu" data-reactid="79">
-											<a class="link-mypage" href="../member/mypage.do"
-												data-reactid="80">마이페이지</a> <a class="link-logout"
-												href="../member/logout.do" data-reactid="81">로그아웃</a>
+											<a class="link-mypage" href="../member/mypageInfo.do" data-reactid="80">마이페이지</a> 
+											<a class="link-logout" href="../member/logout.do" data-reactid="81">로그아웃</a>
 										</div>
 									</div>
 								</div>
-					</span> </c:when> 
+							</span>
+						 </c:when> 
 						<c:otherwise>
 							<li class="top-link-item nonmember-menu" data-reactid="70">
 								<a href="../member/memberjoin.do" data-reactid="71">회원가입</a> <a
 								href="../member/login.do" data-reactid="72">로그인</a>
 							</li>
 						</c:otherwise> 
-					</c:choose></li>
+					</c:choose>
 				</ul>
 			</div>
 		</section>

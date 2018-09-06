@@ -2,7 +2,6 @@
 	pageEncoding="UTF-8"%>
 <!-- 야가자 상단 -->
 <%@include file="/resources/YagajaSkin/yagajaTop.jsp"%>
-<<<<<<< HEAD
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -22,12 +21,6 @@
     <script type="text/javascript" src="/include/js/member_validate.js?180903"></script>
 </head>
 
-=======
-<%
-String phone = request.getParameter("phone_1")+"-"+request.getParameter("phone_2")+"-"+request.getParameter("phone_3");
-String email = request.getParameter("email_1")+"@"+request.getParameter("email_2");
-%>
->>>>>>> refs/remotes/origin/master
 <script>
 
 function mValidate(fn){
@@ -150,7 +143,7 @@ function email_input(em, frm){
 
 							<div class="login-cont">
 								<div class="inp-txt-member">
-									<input type="text" name="id" value="" placeholder="아이디(8~20자)" title="아이디를 입력" />
+									<input type="text" name="id" id="id" value="" placeholder="아이디(8~20자)" title="아이디를 입력" />
 								</div>
 
 								<div class="inp-txt-member">
@@ -170,7 +163,7 @@ function email_input(em, frm){
 								</div>
 
 								<div class="inp-txt-member">
-									<input type="text" id="mInput1" name="nickName"
+									<input type="text" id="nickName" name="nickName"
 										placeholder="닉네임(2~8자)" title="닉네임을 입력(2~8자)" />
 								</div>
 
@@ -183,13 +176,13 @@ function email_input(em, frm){
 								</div>
 
 								<div class="inp-txt-member">
-									<input type="password" id="mInput2" name="pass"
+									<input type="password" id="pass" name="pass"
 										class="inp-password" /> <label class="placeholder-div">비밀번호(8~20자)</label>
 								</div>
 								<div class="warning-txt msg_passwd" id="pwTextArea"></div>
 
 								<div class="inp-txt-member">
-									<input type="password" id="" name="passcheck"
+									<input type="password" id="passcheck" name="passcheck"
 										class="inp-password" /> <label class="placeholder-div">비밀번호 확인</label>
 								</div>
 								<div class="warning-txt msg_passwdConfirm" id="cpTextArea"></div>

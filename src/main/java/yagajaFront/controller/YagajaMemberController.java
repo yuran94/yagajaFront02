@@ -102,21 +102,19 @@ public class YagajaMemberController {
 	}
 
 	
-	
-	
-	
-/*	// 회원정보 수정
-	@RequestMapping("/member/modify.do")
-	public String modify(Model model, HttpServletRequest req, HttpSession session) {
+	// 회원정보보기
+	@RequestMapping("/member/mypageInfo.do")
+	public String view(Model model, HttpServletRequest req, HttpSession session) {
 		
 		//로그인이 안되있다면 로그인페이지로 넘어가기
 		if(session.getAttribute("siteUserInfo")==null){
 			return "redirect:login.do";
 		}
 		
-		YagajaMemberDTO dto = sqlSession.getMapper(YagajaMemberImpl.class).view(req.getParameter("id"),((YagajaMemberVO)session.getAttribute("siteUserInfo")).getId());
+	/*	YagajaMemberDTO dto = sqlSession.getMapper(YagajaMemberImpl.class).view(req.getParameter("id"),((YagajaMemberVO)session.getAttribute("siteUserInfo")).getId());
 		
-		model.addAttribute("dto",dto);
-		return "member/modify";
-	}*/
+		
+		model.addAttribute("dto",dto);*/
+		return "member/mypageInfo";
+	}
 }
