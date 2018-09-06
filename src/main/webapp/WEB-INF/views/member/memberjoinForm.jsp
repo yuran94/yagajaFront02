@@ -2,12 +2,49 @@
 	pageEncoding="UTF-8"%>
 <!-- 야가자 상단 -->
 <%@include file="/resources/YagajaSkin/yagajaTop.jsp"%>
+<%
+String phone = request.getParameter("phone_1")+"-"+request.getParameter("phone_2")+"-"+request.getParameter("phone_3");
+String email = request.getParameter("email_1")+"@"+request.getParameter("email_2");
+%>
 <script>
 
 function mValidate(fn){
 	if(fn.id.value==""){
 		alert("아이디를 입력해주세요");
 		fn.id.focus();
+		return false;
+	}
+	
+	if(fn.nickname.value==""){
+		alert("닉네임을 입력해주세요");
+		fn.nickname.focus();
+		return false;
+	}
+	if(fn.email_1.value==""){
+		alert("이메일아이디를 입력해주세요");
+		fn.email_1.focus();
+		return false;
+	}
+	if(fn.email_2.value==""){
+		alert("휴대번호를 입력해주세요");
+		fn.email_2.focus();
+		return false;
+	}
+	if(fn.phone_1.value==""){
+		alert("휴대번호를 입력해주세요");
+		fn.phone_1.focus();
+		return false;
+	}
+	
+	if(fn.phone_2.value==""){
+		alert("휴대번호를 입력해주세요");
+		fn.phone_2.focus();
+		return false;
+	}
+	
+	if(fn.phone_3.value==""){
+		alert("휴대번호를 입력해주세요");
+		fn.phone_3.focus();
 		return false;
 	}
 	
@@ -34,18 +71,6 @@ function mValidate(fn){
 				return false;
 			}			
 		}		
-	}
-	
-	if (fn.idHidden.value == 2) {
-			alert("아이디 중복확인을 해주세요.");
-			fn.id.focus();
-			return false;
-	}
-	
-	if (fn.idHidden.value == 0) {
-			alert("중복된 아이디가 있어 회원가입이 불가능합니다.");
-			fn.id.focus();
-			return false;
 	}
 }
 
@@ -103,8 +128,7 @@ function email_input(em, frm){
 
 							<div class="login-cont">
 								<div class="inp-txt-member">
-									<input type="text" name="id" value=""
-										placeholder="아이디(8~20자)" title="아이디를 입력" />
+									<input type="text" name="id" value="" placeholder="아이디(8~20자)" title="아이디를 입력" />
 								</div>
 
 								<div class="inp-txt-member">
