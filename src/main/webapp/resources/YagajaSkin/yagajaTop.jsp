@@ -1,34 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<link rel="stylesheet" href="../resources/bootstrap3.3.7/css/bundle.css">
-<link rel="stylesheet" href="../resources/bootstrap3.3.7/css/Reset.css">
-<link rel="stylesheet" href="../resources/bootstrap3.3.7/css/common.css">
-<link rel="stylesheet" href="../resources/bootstrap3.3.7/css/v2_member.css" />
-<link rel="stylesheet" href="../resources/bootstrap3.3.7/css/password.css" />
-<script src="../resources/bootstrap3.3.7/jquery/jquery-3.2.1.min.js"></script>				
-<script src="../resources/bootstrap3.3.7/js/bootstrap.min.js"></script>
 
+<link rel="stylesheet" href="../resources/bootstrap3.3.7/css/bundle.css" data-reactid="18" />
+<link rel="stylesheet" href="../resources/bootstrap3.3.7/css/Reset.css" data-reactid="19" />
+<link rel="stylesheet" href="../resources/bootstrap3.3.7/css/common.css" data-reactid="20" />
+		
 <head data-reactid="2">
-<meta data-react-helmet="true" name="description"
-	content="서울특별시 관악구 신림동 1569-5  | 신림 HOTEL 어반 | 리뷰 많은 추천 숙소 확인하고 최저가로 예약하세요! 커플, 가족, 친구와 함께 떠나는 여행은 야놀자와 함께!"
-	data-reactid="4" />
-<meta data-react-helmet="true" name="keywords"
-	content="서울특별시 관악구 신림동 1569-5 ,  주차가능, 파티룸, 스파/월풀, VOD, 프로젝터, 커플PC, 노천탕, 프로포즈, 촬영장소, 트윈베드, 신림 HOTEL 어반, 최저가, 쿠폰, 혜택, 할인, 예약, 여행, 축제, 행사"
-	data-reactid="5" />
-<meta data-react-helmet="true" property="og:title"
-	content="신림 HOTEL 어반 | 야놀자" data-reactid="6" />
-<meta data-react-helmet="true" property="og:description"
-	content="서울특별시 관악구 신림동 1569-5  | 신림 HOTEL 어반 | 리뷰 많은 추천 숙소 확인하고 최저가로 예약하세요! 커플, 가족, 친구와 함께 떠나는 여행은 야놀자와 함께!"
-	data-reactid="7" />
-<meta data-react-helmet="true" property="og:image"
-	content="[https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab8628b2ccf63.11726371.jpg,&quot;https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab8628ad540d5.12976672.jpg&quot;,&quot;https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab8628c0f9f89.24329968.jpg&quot;,&quot;https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab8628d23dc95.90608590.jpg&quot;,&quot;https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab8628e7201b8.79624580.jpg&quot;,&quot;https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab8628fb85aa3.82961507.jpg&quot;,&quot;https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab86292bde6d9.27096287.jpg&quot;,&quot;https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab8629419d375.13419337.jpg&quot;,&quot;https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab86293aab587.19019340.jpg&quot;,&quot;https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab862951cf7a0.20588982.jpg&quot;,&quot;https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab8629672ddc0.16551616.jpg&quot;,&quot;https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab86297ce9fa4.04977792.jpg&quot;,&quot;https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab8629ace8522.22607190.jpg&quot;,&quot;https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab8629a6d9816.69938855.jpg&quot;,&quot;https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab8629d8fa895.79941713.jpg&quot;,&quot;https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab8629eeefcc0.04035083.jpg&quot;,&quot;https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab8629eb44a39.13150762.jpg&quot;,&quot;https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab862a0013e14.30005508.jpg&quot;,&quot;https://yaimg.yanolja.com/resize/place/v4/2017/08/21/05/1280/5999f6805f2ed6.12061358.jpg&quot;,&quot;https://yaimg.yanolja.com/resize/place/v4/2017/08/21/05/1280/5999f680805188.23326724.jpg&quot;]"
-	data-reactid="8" />
-<meta data-react-helmet="true" property="og:type" content="website"
-	data-reactid="9" />
-
-
-
 
 <link data-react-helmet="true" rel="canonical"
 	href="https://www.yanolja.com/places/3000411" data-reactid="12" />
@@ -43,7 +20,13 @@
 	content="https://yaimg.yanolja.com/joy/pw/favicon/favicon_152x152.ico"
 	data-reactid="16" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" data-reactid="17" />
+
+
+
 </head>
+
+
+
 <div class="container-fluid">
 	<header class="pc-header header-comm false" id="header"
 		data-reactid="7">
@@ -285,3 +268,4 @@
 			</div>
 		</section>
 	</header>
+</div>

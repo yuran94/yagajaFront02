@@ -2,6 +2,7 @@
 	pageEncoding="UTF-8"%>
 <!-- 야가자 상단 -->
 <%@include file="./yagajaTop.jsp"%>
+
 <script src="../resources/bootstrap3.3.7/jquery/jquery-3.2.1.js"></script>
 <body data-reactid="26" cz-shortcut-listen="true">
 	<!-- <noscript data-reactid="27">
@@ -343,3 +344,7 @@
 					</div>
 					<!-- footer부분 -->
 					<%@include file="./yagajaBottom.jsp"%>
+				</div>
+			</div>
+		</div>
+	</div>

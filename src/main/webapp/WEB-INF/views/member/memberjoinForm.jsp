@@ -2,6 +2,25 @@
 	pageEncoding="UTF-8"%>
 <!-- 야가자 상단 -->
 <%@include file="/resources/YagajaSkin/yagajaTop.jsp"%>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="naver-site-verification" content="0fbfbe55f106bafa74e0bbd934fa0cc7524894dc"/>
+    <meta name="description" content="집떠나 놀땐 종합 숙박어플 야놀자, 모텔 호텔 리조트 펜션 게스트하우스 예약"/>
+    <title>야놀자 : 대한민국 대표 종합 숙박어플</title>
+    <link rel="stylesheet" type="text/css" href="../resources/bootstrap3.3.7/css/member.css?180903"/>
+    <link rel="stylesheet" type="text/css" href="../resources/bootstrap3.3.7/css/v2_member.css?180903"/>
+    <link rel="shortcut icon" href="http://image2.yanolja.com/web2.0/assets/common/favicon_32x32.ico">
+    <meta name="msapplication-TileColor" content="#D83434">
+    <meta name="msapplication-TileImage" content="http://image2.yanolja.com/web2.0/assets/common/favicon_32x32.ico">
+    <link rel="apple-touch-icon-precomposed" href="http://image2.yanolja.com/web2.0/assets/common/favicon_32x32.ico">
+    <link rel="icon" href="http://image2.yanolja.com/web2.0/assets/common/favicon_32x32.ico">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/include/js/common.js?180903"></script>
+    <script type="text/javascript" src="/include/js/member_validate.js?180903"></script>
+</head>
+
 <script>
 
 function mValidate(fn){
