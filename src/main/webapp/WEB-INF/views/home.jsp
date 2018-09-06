@@ -7,7 +7,6 @@
 	<title>Home</title>
 </head>
 <body>
-커밋해봄 시발제발 ㅇㅅㅇ
 <h2>
 <a href="./main/main.do">메인페이지</a>
 </h2>

@@ -5,8 +5,22 @@
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
     
 <mapper namespace="member.YagajaMemberImpl">
-
+	<!-- 로그인 -->
 	<select id="login" resultType="member.YagajaMemberVO">
 		select * from member where id=#{0} and pass=#{1}
 	</select>
+	
+	<!-- 회원가입  -->
+	<insert id="join">
+		insert into member(member_no, id, pass, nickname, phone, email)
+			values(member_no_seq, #{_id}, #{_pass}, #{_nickname}, #{_phone}, #{_email});
+	</insert>
+	
+	
+	<!-- 회원수정  -->
+	<update id="modify">
+   		UPDATE member SET nickname=#{param2}, email=#{param3}, 
+   		WHERE member_no=#{param3} AND id=#{param4}
+  	</update>
+	
 </mapper>

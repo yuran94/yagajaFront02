@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!-- 야가자 상단 -->
 <%@include file="/resources/YagajaSkin/yagajaTop.jsp"%>
 <script type="text/javascript">
@@ -24,21 +24,34 @@ function loginValidate(f){
 				<article class="contents">
 				<div class="member-content">
 					<section class="login-area">
-						<h3>
-							<b>로그인</b>하고, 혜택받으세요!
-						</h3>
+						
 
 						<form name="loginForm" action="./loginAction.do" method="post" class="form-group form-w410"
 							onsubmit="return loginValidate(this);"	>
-							<input type="hidden" name="redirect_url" id="redirect_url" value="https://www.yanolja.com/member/login" /> 
+							<input type="hidden" name="redirect_url" id="redirect_url"  /> 
 							<input type="hidden" name="targetPage" id="targetPage" value="" /> 
 							<input type="hidden" name="auth" id="auth" value="0" /> 
 							<input type="hidden" name="M_CLIENT_ID" id="M_CLIENT_ID" value="MTQzMDE4NTIwOA==" /> 
 							<input type="hidden" name="M_CLIENT_SECRET" id="M_CLIENT_SECRET" value="5197a9fde7e8b499c5a06498e08145cf" /> 
 							<input type="hidden" name="page_div" id="page_div" value="pc" /> 
 							<input type="hidden" name="social" id="social" value="" />
-							
-							<fieldset>
+						<c:choose>
+							<c:when test="${not empty sessionScope.siteUserInfo }">
+								<h3>
+									<b>로그인</b>을 환영합니다!
+								</h3>
+								<div class="login-cont">
+									<div class="inp-txt-member">
+										<h4>${sessionScope.siteUserInfo.id }</h4>
+										<h4>${sessionScope.siteUserInfo.nickname }님</h4>
+									</div>
+								</div>
+							</c:when>
+							<c:otherwise>
+								<h3>
+									<b>로그인</b>하고, 혜택받으세요!
+								</h3>
+								<fieldset>
 								<legend class="sc-out">로그인 폼</legend>
 								<div class="login-cont">
 								
@@ -46,10 +59,12 @@ function loginValidate(f){
 								<!-- 아이디 -->
 										<input type="text" id="mInput1" name="id" placeholder="아이디" title="아이디 입력" />
 									</div>
+									<span style="font-size: 0.8em; color:#ff3478;">${IdNG }</span>
 									<div class="inp-txt-member">
 								<!-- 비밀번호 -->
 										<input type="password" id="mInput2" name="pass" placeholder="비밀번호" title="비밀번호 입력" />
 									</div>
+									<span style="font-size: 0.8em; color:#ff3478;">${PassNG }</span>
 									<div class="inp-checkbox-member auto-login">
 										<input type="checkbox" id="ch01" name="auto" value="on" checked="checked">
 											<label for="ch01">
@@ -85,6 +100,9 @@ function loginValidate(f){
 									</p>
 								</div>
 							</fieldset>
+							</c:otherwise>
+						</c:choose>	
+						
 						</form>
 						<!-- a href="/member/find?pageType=id" title="아이디찾기">아이디찾기</a>
           				<a href="/member/find?pageType=pw" title="비밀번호찾기">비밀번호찾기</a -->

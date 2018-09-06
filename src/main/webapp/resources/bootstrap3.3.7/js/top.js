@@ -1,13 +1,3 @@
-$(function () {
-    var promise = memberProfile();
-    promise.done(function (data) {
-        if (data.result != 'FAILED') {
-            topLoad(data);
-        }
-    }).fail(function () {
-        alert('에러가 발생 했습니다. 잠시후 다시 시도해 주세요.');
-    });
-});
 
 //callBack
 function topLoad(data) {

@@ -1,79 +1,57 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-	
-<link rel="stylesheet" href="../resources/bootstrap3.3.7/css/bundle.css" >
-<link rel="stylesheet" href="../resources/bootstrap3.3.7/css/Reset.css" >
-<link rel="stylesheet" href="../resources/bootstrap3.3.7/css/common.css" >
-<link rel="stylesheet" type="text/css" href="../resources/bootstrap3.3.7/css/v2_member.css" />
-<link rel="stylesheet" type="text/css" href="../resources/bootstrap3.3.7/css/password.css" />
-<script type="text/javascript" src="../resources/bootstrap3.3.7/js/myinfo.js"></script>
-<script type="text/javascript" src="../resources/bootstrap3.3.7/js/top.js"></script>
-<script type="text/javascript" src="../resources/bootstrap3.3.7/js/common.js"></script>
-<script type="text/javascript" src="../resources/bootstrap3.3.7/js/ga.js"></script>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<link rel="stylesheet" href="../resources/bootstrap3.3.7/css/bundle.css">
+<link rel="stylesheet" href="../resources/bootstrap3.3.7/css/Reset.css">
+<link rel="stylesheet" href="../resources/bootstrap3.3.7/css/common.css">
+<link rel="stylesheet" href="../resources/bootstrap3.3.7/css/v2_member.css" />
+<link rel="stylesheet" href="../resources/bootstrap3.3.7/css/password.css" />
+<script src="../resources/bootstrap3.3.7/jquery/jquery-3.2.1.min.js"></script>				
+<script src="../resources/bootstrap3.3.7/js/bootstrap.min.js"></script>
 
-<!-- <script src="../resources/bootstrap3.3.7/jquery/jquery-3.2.1.js"></script> -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-	
 <head data-reactid="2">
-<title data-reactid="3">야가자 : 대한민국 최저가 종합숙박 예약 | 공식 사이트</title>
-<script src="https://analysis.adinsight.co.kr/emnet/trs_esc.js"
-	id="TRS_script"></script>
-<script src="https://cr.acecounter.com/Web/AceCounter_AW.js?gc=AH5A41667571241&amp;py=0&amp;gd=gtp2&amp;gp=8080&amp;up=NaPm_Ncisy&amp;rd=1533125320946"></script>
-<script src="https://connect.facebook.net/signals/config/408076496057547?v=2.8.24&amp;r=stable"
-	async=""></script>
-<script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script>
-<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<meta data-react-helmet="true" name="description"
+	content="서울특별시 관악구 신림동 1569-5  | 신림 HOTEL 어반 | 리뷰 많은 추천 숙소 확인하고 최저가로 예약하세요! 커플, 가족, 친구와 함께 떠나는 여행은 야놀자와 함께!"
+	data-reactid="4" />
+<meta data-react-helmet="true" name="keywords"
+	content="서울특별시 관악구 신림동 1569-5 ,  주차가능, 파티룸, 스파/월풀, VOD, 프로젝터, 커플PC, 노천탕, 프로포즈, 촬영장소, 트윈베드, 신림 HOTEL 어반, 최저가, 쿠폰, 혜택, 할인, 예약, 여행, 축제, 행사"
+	data-reactid="5" />
+<meta data-react-helmet="true" property="og:title"
+	content="신림 HOTEL 어반 | 야놀자" data-reactid="6" />
+<meta data-react-helmet="true" property="og:description"
+	content="서울특별시 관악구 신림동 1569-5  | 신림 HOTEL 어반 | 리뷰 많은 추천 숙소 확인하고 최저가로 예약하세요! 커플, 가족, 친구와 함께 떠나는 여행은 야놀자와 함께!"
+	data-reactid="7" />
+<meta data-react-helmet="true" property="og:image"
+	content="[https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab8628b2ccf63.11726371.jpg,&quot;https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab8628ad540d5.12976672.jpg&quot;,&quot;https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab8628c0f9f89.24329968.jpg&quot;,&quot;https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab8628d23dc95.90608590.jpg&quot;,&quot;https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab8628e7201b8.79624580.jpg&quot;,&quot;https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab8628fb85aa3.82961507.jpg&quot;,&quot;https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab86292bde6d9.27096287.jpg&quot;,&quot;https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab8629419d375.13419337.jpg&quot;,&quot;https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab86293aab587.19019340.jpg&quot;,&quot;https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab862951cf7a0.20588982.jpg&quot;,&quot;https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab8629672ddc0.16551616.jpg&quot;,&quot;https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab86297ce9fa4.04977792.jpg&quot;,&quot;https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab8629ace8522.22607190.jpg&quot;,&quot;https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab8629a6d9816.69938855.jpg&quot;,&quot;https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab8629d8fa895.79941713.jpg&quot;,&quot;https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab8629eeefcc0.04035083.jpg&quot;,&quot;https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab8629eb44a39.13150762.jpg&quot;,&quot;https://yaimg.yanolja.com/v5/2018/03/26/12/1280/5ab862a0013e14.30005508.jpg&quot;,&quot;https://yaimg.yanolja.com/resize/place/v4/2017/08/21/05/1280/5999f6805f2ed6.12061358.jpg&quot;,&quot;https://yaimg.yanolja.com/resize/place/v4/2017/08/21/05/1280/5999f680805188.23326724.jpg&quot;]"
+	data-reactid="8" />
+<meta data-react-helmet="true" property="og:type" content="website"
+	data-reactid="9" />
+
+
+
+
+<link data-react-helmet="true" rel="canonical"
+	href="https://www.yanolja.com/places/3000411" data-reactid="12" />
 <link rel="shortcut icon"
 	href="https://yaimg.yanolja.com/joy/pw/favicon/favicon_32x32.ico"
-	type="image/x-icon">
+	type="image/x-icon" data-reactid="13" />
 <link rel="icon"
 	href="https://yaimg.yanolja.com/joy/pw/favicon/favicon_32x32.ico"
-	type="image/x-icon">
-<meta name="msapplication-TileColor" content="#D83434" >
+	type="image/x-icon" data-reactid="14" />
+<meta name="msapplication-TileColor" content="#D83434" data-reactid="15" />
 <meta name="msapplication-TileImage"
 	content="https://yaimg.yanolja.com/joy/pw/favicon/favicon_152x152.ico"
-	>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" >
-
-
-
-
-<link rel="canonical" href="https://stage-beta-stay.yanolja.com"
-	data-react-helmet="true">
-<meta name="keywords" content="야놀자, 숙소예약, 빈방찾기, 호텔할인, 대실연장, 숙박예약, 숙소할인"
-	data-react-helmet="true">
-<meta name="description"
-	content="호텔, 펜션, 모텔, 게하 등 전국 숙소 + 레저/티켓, 액티비티 까지 최대 80% 할인"
-	data-react-helmet="true">
-<meta property="og:title" content="야놀자 : 대한민국 최저가 종합숙박 예약 | 공식 사이트"
-	data-react-helmet="true">
-<meta name="og:description"
-	content="호텔, 펜션, 모텔, 게하 등 전국 숙소 + 레저/티켓, 액티비티 까지 최대 80% 할인"
-	data-react-helmet="true">
-<meta property="og:image"
-	content="https://yaimg.yanolja.com/joy/sunny/static/images/yanolja_sns_800x400.png"
-	data-react-helmet="true">
-<meta property="og:type" content="website" data-react-helmet="true">
-<meta property="og:url" content="https://www.yanolja.com"
-	data-react-helmet="true">
-<meta property="twitter:title" content="야놀자 : 대한민국 최저가 종합숙박 예약 | 공식 사이트"
-	data-react-helmet="true">
-<meta property="twitter:description"
-	content="호텔, 펜션, 모텔, 게하 등 전국 숙소 + 레저/티켓, 액티비티 까지 최대 80% 할인"
-	data-react-helmet="true">
+	data-reactid="16" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" data-reactid="17" />
 </head>
-
-
-
 <div class="container-fluid">
 	<header class="pc-header header-comm false" id="header"
 		data-reactid="7">
 		<section class="gnb-area" data-reactid="8">
-			<a class="logo-rap" href="../main/main.do" > 
-				<!-- 좌상단 -->
+			<a class="logo-rap" href="../main/main.do" data-reactid="9"> 
+			<!-- 좌상단 -->
 				<h1 class="site-logo icon-comm icon-logo-header" data-reactid="10">
-					<span class="sc-out" data-reactid="11">Yanolja</span><i
+					<span class="sc-out" data-reactid="11">Yagaja</span> <i
 						class="icon-beta" data-reactid="12"></i>
 				</h1>
 			</a>
@@ -81,7 +59,8 @@
 
 			<!-- 상단메뉴바 -->
 			<ul class="gnb" data-reactid="13">
-				<li class="gnb__item" data-reactid="14"><a href="#">내 주변</a></li>
+				<li class="gnb__item" data-reactid="14"><a href="#"
+					data-reactid="15">내 주변</a></li>
 				<li class="gnb__item" data-reactid="16"><span data-reactid="17">
 						<div class="popover-wrapper" data-reactid="18">
 							<div class="popover-container-pc" data-reactid="19">
@@ -262,22 +241,47 @@
 							</div>
 						</div>
 				</span></li>
-				<li class="gnb__item"><a
-					href="/promotion/specialevent" >핫딜</a></li>
-				<li class="gnb__item"><a >경매</a>
-				<!-- <li class="gnb__item"><a
+				<li class="gnb__item"><a href="/promotion/specialevent">핫딜</a></li>
+				<li class="gnb__item"><a>경매</a> <!-- <li class="gnb__item"><a
 					href="/promotion/specialevent" >기획전</a></li>
 				<li class="gnb__item"><a >캐스트</a></li> -->
 			</ul>
-			<div class="top-links f-right" >
-				<ul >
-					<li class="top-link-item"><a
-						class="link-mypage" >예약내역</a></li>
-					<li class="top-link-item nonmember-menu" >
-					<a href="../member/memberjoin.do">회원가입</a>
-					<a href="../member/login.do">로그인</a></li>
+			<div class="top-links f-right" data-reactid="66">
+				<ul data-reactid="67">
+					<li class="top-link-item" data-reactid="68"><a
+						class="link-mypage" data-reactid="69">예약내역</a></li>
+					<li class="top-link-item" data-reactid="70"><span
+						data-reactid="71">
+							<div class="popover-wrapper" data-reactid="72">
+								<div class="popover-container-pc" data-reactid="73">
+									<div data-popover-children="true" data-reactid="74">
+										<c:choose>
+										<c:when test="${not empty sessionScope.siteUserInfo }">
+										<button  type="button" class="member-info" data-reactid="75">
+											<img src="../resources/images/default_picture.png"
+												alt="nickname" class="avatar" data-reactid="76" /> <span
+												data-reactid="77">${sessionScope.siteUserInfo.nickname }</span>
+										</button>
+									</div>
+									<div style="display:block;"
+										class="popover-content popover-member-menu animate-bounce-down"
+										data-popover-content="true" data-reactid="78">
+										<div class="member-menu" data-reactid="79">
+											<a class="link-mypage" href="../member/mypage.do"
+												data-reactid="80">마이페이지</a> <a class="link-logout"
+												href="../member/logout.do" data-reactid="81">로그아웃</a>
+										</div>
+									</div>
+								</div>
+					</span> </c:when> 
+						<c:otherwise>
+							<li class="top-link-item nonmember-menu" data-reactid="70">
+								<a href="../member/memberjoin.do" data-reactid="71">회원가입</a> <a
+								href="../member/login.do" data-reactid="72">로그인</a>
+							</li>
+						</c:otherwise> 
+					</c:choose></li>
 				</ul>
 			</div>
 		</section>
 	</header>
-</div>
