@@ -28,8 +28,6 @@
 	data-reactid="9" />
 
 
-
-
 <link data-react-helmet="true" rel="canonical"
 	href="https://www.yanolja.com/places/3000411" data-reactid="12" />
 <link rel="shortcut icon"
@@ -51,8 +49,8 @@
 			<a class="logo-rap" href="../main/main.do" data-reactid="9"> 
 			<!-- 좌상단 -->
 				<h1 class="site-logo icon-comm icon-logo-header" data-reactid="10">
-					<span class="sc-out" data-reactid="11">Yagaja</span> <i
-						class="icon-beta" data-reactid="12"></i>
+					<span class="sc-out" data-reactid="11">Yagaja</span> 
+					<i class="icon-beta" data-reactid="12"></i>
 				</h1>
 			</a>
 
@@ -257,30 +255,29 @@
 									<div data-popover-children="true" data-reactid="74">
 										<c:choose>
 										<c:when test="${not empty sessionScope.siteUserInfo }">
-										<button  type="button" class="member-info" data-reactid="75">
+										
+										<button type="button" class="member-info" data-reactid="75" >
 											<img src="../resources/images/default_picture.png"
-												alt="nickname" class="avatar" data-reactid="76" /> <span
-												data-reactid="77">${sessionScope.siteUserInfo.nickname }</span>
+												alt="nickname" class="avatar" data-reactid="76" /> 
+												<span data-reactid="77">${sessionScope.siteUserInfo.nickname }</span>
 										</button>
-									</div>
-									<div style="display:block;"
-										class="popover-content popover-member-menu animate-bounce-down"
+									<div style="display:block;" class="popover-content popover-member-menu animate-bounce-down"
 										data-popover-content="true" data-reactid="78">
 										<div class="member-menu" data-reactid="79">
-											<a class="link-mypage" href="../member/mypage.do"
-												data-reactid="80">마이페이지</a> <a class="link-logout"
-												href="../member/logout.do" data-reactid="81">로그아웃</a>
+											<a class="link-mypage" href="../member/mypageInfo.do" data-reactid="80">마이페이지</a> 
+											<a class="link-logout" href="../member/logout.do" data-reactid="81">로그아웃</a>
 										</div>
 									</div>
 								</div>
-					</span> </c:when> 
+							</span>
+						 </c:when> 
 						<c:otherwise>
 							<li class="top-link-item nonmember-menu" data-reactid="70">
 								<a href="../member/memberjoin.do" data-reactid="71">회원가입</a> <a
 								href="../member/login.do" data-reactid="72">로그인</a>
 							</li>
 						</c:otherwise> 
-					</c:choose></li>
+					</c:choose>
 				</ul>
 			</div>
 		</section>

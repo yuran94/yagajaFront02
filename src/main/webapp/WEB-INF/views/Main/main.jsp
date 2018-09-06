@@ -296,7 +296,7 @@
 
 
 								<!-- 하단footer 바로 위 공지사항  -->
-								<section class="mainnotice-area column1" data-reactid="215">
+								<!-- <section class="mainnotice-area column1" data-reactid="215">
 									<h3 data-reactid="216">공지사항</h3>
 									<div data-reactid="217">
 										<div class="rolling-panel" data-reactid="218">
@@ -310,13 +310,11 @@
 											</button>
 										</div>
 									</div>
-								</section>
-								<span itemscope="" itemtype="http://schema.org/Organization"
-									style="display: none;" data-reactid="223"><link
-										itemprop="url" href="https://www.yanolja.com"
-										data-reactid="224" /> <a itemprop="sameAs"
-									href="https://www.facebook.com/yanolja/" data-reactid="225">FB</a><a
-									itemprop="sameAs"
+								</section> -->
+								<span itemscope="" itemtype="http://schema.org/Organization" style="display: none;" data-reactid="223">
+								<link itemprop="url" href="https://www.yanolja.com" data-reactid="224" /> 
+								<a itemprop="sameAs" href="https://www.facebook.com/yanolja/" data-reactid="225">FB</a>
+								<a itemprop="sameAs"
 									href="https://www.instagram.com/yanoljainsta/"
 									data-reactid="226">instagram</a><a itemprop="sameAs"
 									href="https://www.youtube.com/user/yanoljamedia"
@@ -341,3 +339,5 @@
 					</div>
 					<!-- footer부분 -->
 					<%@include file="/resources/YagajaSkin/yagajaBottom.jsp"%>
+					</div>
+					
