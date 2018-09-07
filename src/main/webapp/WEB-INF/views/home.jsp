@@ -17,6 +17,10 @@
 
 <h2>
 <a href="./member/login.do">로그인페이지</a>
-</h2>될까아아아아아아아아앙아아아아아아
+</h2>
+
+<h2>
+<a href="./lodge/motelList.do">모텔리스트 페이지</a>
+</h2>
 </body>
 </html>
