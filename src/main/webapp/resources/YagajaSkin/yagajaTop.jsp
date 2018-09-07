@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+	
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <link rel="stylesheet" href="../resources/bootstrap3.3.7/css/bundle.css" data-reactid="18" />
 <link rel="stylesheet" href="../resources/bootstrap3.3.7/css/Reset.css" data-reactid="19" />
@@ -246,42 +248,41 @@
 					href="/promotion/specialevent" >기획전</a></li>
 				<li class="gnb__item"><a >캐스트</a></li> -->
 			</ul>
-			<div class="top-links f-right" data-reactid="66">
-				<ul data-reactid="67">
-					<li class="top-link-item" data-reactid="68"><a
-						class="link-mypage" data-reactid="69">예약내역</a></li>
-					<li class="top-link-item" data-reactid="70"><span
-						data-reactid="71">
-							<div class="popover-wrapper" data-reactid="72">
-								<div class="popover-container-pc" data-reactid="73">
-									<div data-popover-children="true" data-reactid="74">
-										<c:choose>
-										<c:when test="${not empty sessionScope.siteUserInfo }">
-										
-										<button type="button" class="member-info" data-reactid="75" >
-											<img src="../resources/images/default_picture.png"
-												alt="nickname" class="avatar" data-reactid="76" /> 
-												<span data-reactid="77">${sessionScope.siteUserInfo.nickname }</span>
-										</button>
-									<div style="display:block;" class="popover-content popover-member-menu animate-bounce-down"
-										data-popover-content="true" data-reactid="78">
-										<div class="member-menu" data-reactid="79">
-											<a class="link-mypage" href="../member/mypageInfo.do" data-reactid="80">마이페이지</a> 
-											<a class="link-logout" href="../member/logout.do" data-reactid="81">로그아웃</a>
-										</div>
-									</div>
-								</div>
-							</span>
-						 </c:when> 
-						<c:otherwise>
-							<li class="top-link-item nonmember-menu" data-reactid="70">
-								<a href="../member/memberjoin.do" data-reactid="71">회원가입</a> <a
-								href="../member/login.do" data-reactid="72">로그인</a>
-							</li>
-						</c:otherwise> 
-					</c:choose>
-				</ul>
-			</div>
+   <div class="top-links f-right" data-reactid="66">
+            <ul data-reactid="67">
+               <li class="top-link-item" data-reactid="68"><a
+                  class="link-mypage" data-reactid="69">예약내역</a></li>
+               <li class="top-link-item" data-reactid="70"><span
+                  data-reactid="71">
+                     <div class="popover-wrapper" data-reactid="72">
+                        <div class="popover-container-pc" data-reactid="73">
+                           <div data-popover-children="true" data-reactid="74">
+                              <c:choose>
+                              <c:when test="${not empty sessionScope.siteUserInfo }">
+                              <button type="button" class="member-info" data-reactid="75" >
+                                 <img src="../resources/images/default_picture.png"
+                                    alt="nickname" class="avatar" data-reactid="76" /> 
+                                    <span data-reactid="77">${sessionScope.siteUserInfo.nickname }</span>
+                              </button>
+                              <div style="display:block;" class="popover-content popover-member-menu animate-bounce-down"
+                              data-popover-content="true" data-reactid="78">
+                              <div class="member-menu" data-reactid="79">
+                                 <a class="link-mypage" href="../member/mypageInfo.do" data-reactid="80">마이페이지</a> 
+                                 <a class="link-logout" href="../member/logout.do" data-reactid="81">로그아웃</a>
+                              </div>
+                           </div>
+                        </div>
+                     </span>
+                   </c:when> 
+                  <c:otherwise>
+                     <li class="top-link-item nonmember-menu" data-reactid="70">
+                        <a href="../member/memberjoin.do" data-reactid="71">회원가입</a> <a
+                        href="../member/login.do" data-reactid="72">로그인</a>
+                     </li>
+                  </c:otherwise> 
+               </c:choose>
+            </ul>
+         </div>
 		</section>
 	</header>
 </div>
